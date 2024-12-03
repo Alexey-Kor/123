@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Стили навигации */
+nav ul {
+    background-color: blue;
+    padding: 10px;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    color: red;
+    text-decoration: underline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background-color: blue;
+}
+
+/* Стили для футера */
+footer {
+    background-color: blue;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Контейнер для изображения и текста */
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 1000px; /* Увеличиваем размер изображения */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.info-text {
+    width: 100%;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-image {
+        width: 100%;
+    }
+
+    .info-text {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+
+.info-text h2 {
+    font-size: 24px;
+    color: red;
+}
+
+.info-text p, .info-text ul {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Стили для блока новостей */
+.news-container {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-container h2 {
+    font-size: 24px;
+    color: blue;
+}
+
+.news-container ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+    margin: 0;
+}
+
+.news-container ul li {
+    margin-bottom: 10px;
+}
+
+/* Стили для навигации */
+.navigation-container h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #333333;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.navigation-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation-container ul li {
+    width: calc(25% - 10px);
+    margin-bottom: 10px;
+}
+
+.navigation-container ul li a {
+    display: block;
+    padding: 6px 15px;
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navigation-container ul li a:hover {
+    background-color: darkred;
+}
+
+/* Стили для кнопки */
+.submit-button111 {
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.submit-button111:hover {
+    background-color: darkblue;
+}
+
+/* Уменьшение размера изображения для маленьких экранов */
+.thumbnail {
+    width: 90px;
+    height: auto;
+    margin: 0 auto;
+}
